@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <input type="button" value="按钮" id="btn">
+
+    <p>这是一个标签</p>
+    <p>这是一个标签</p>
+    <p>这是一个标签</p>
+    <p>这是一个标签</p>
+    <p>这是一个标签</p>
+
+
+    <script>
+
+        // 1. jQuery 简单使用
+        // $("#btn").click(function () {
+        //     $("p").text("我是一个p标签");
+        // });
+
+        // 2. DOM 对象 转 jQuery 对象
+        // var btnObj1 = document.getElementById("btn");
+        // $(btnObj1).click(function () {
+        //    alert("这是一个按钮");
+        // });
+
+        // 3. jQuery 对象 转 DOM 对象
+        // var btnObj2 = $("#btn");
+        // btnObj2[0].onclick = function () {
+        //     alert("这也是一个按钮");
+        // };
+
+        // 4. jQuery 中使用
+        /**
+         *  1. jQuery对象.val();     ----------- 表示的是获取该元素的value属性值
+         *  2. jQuery对象.val("值"); ------------ 表示的是设置该元素的value值
+         *  3. jQuery对象.css("css的属性名字", "属性的值"); ---------- 设置元素的样式属性值
+         *
+         */
+
+        // 5. DOM 页面加载事件
+        // window.onload = function () {
+        //     alert("页面加载事件一");
+        // };
+        // window.onload = function () {
+        //     alert("页面加载事件二");
+        // };
+
+        // 6. jQuery 页面加载事件
+        /// 第一种
+        // $(window).load(function () {
+        //     alert("页面加载事件一");
+        // });
+        // $(window).load(function () {
+        //     alert("页面加载事件二");
+        // });
+
+        /// 第二种
+        // $(document).ready(function () {
+        //     alert("页面加载事件一");
+        // });
+        // $(document).ready(function () {
+        //     alert("页面加载事件二");
+        // });
+
+        /// 第三种
+        // $(function () {
+        //     alert("页面加载事件一");
+        // });
+        // $(function () {
+        //     alert("页面加载事件二");
+        // });
+
+        // jQuery(function () {
+        //     alert("页面加载事件一");
+        // });
+        // jQuery(function () {
+        //     alert("页面加载事件二");
+        // });
+
+
+        /**
+         * ///////// DOM中获取元素的方式:
+         *
+         * 根据id获取元素
+         * document.getElementById("id属性的值");
+         *
+         * 根据标签名字获取元素
+         * document.getElementsByTagName("标签名字");
+         *
+         * 根据name属性获取元素
+         * document.getElementsBtName("name属性的值");
+         *
+         * 根据类样式名字获取元素
+         * document.getElementsByClassName("类样式的名字");
+         *
+         * 根据选择器获取元素
+         * document.querySelector("选择器");  -----> id选择器, 类选择器, 标签选择器...一个
+         * document.querySelectorAll("选择器"); 多个的
+         *
+         *
+         * ///////// jQuery中获取元素的方法
+         *
+         * $("选择器") ---- jQuery对象
+         *
+         * id选择器
+         * $("#id属性的值") -----> 某个元素
+         *
+         * 标签选择器
+         * $("标签名字") ------> 多个元素或者是某个元素
+         *
+         * .text() 方法相当于DOM中的 .innerText 属性
+         * 对象.text() -----> 获取该元素的文本内容
+         * 对象.text("值") ------> 设置该元素的文本内容
+         *
+         * 类选择器
+         * $(".cls").css("backgroundColor", "yellow");
+         *
+         * 交集选择器
+         * p标签中 有cls类属性的标签
+         * $("p.cls").css("backgroundColor", "yellow");
+         *
+         * 并集选择器
+         * $("#dv, p, .cls").scc("backgroundColor", "orange");
+         *
+         */
+
+
+        /**
+         * jQuery 方法
+         *
+         * .val();      ------> 设置或者是获取表单标签的value属性值
+         * .text();     ------> 设置或者是获取标签中的文本内容 --- 就相当于 DOM 中 innerText
+         * .css();      ------> 设置元素的css样式属性值
+         * .html();     ------> 设置或者是获取标签中的html内容 --- 相当于 DOM 中 innerHTML
+         *
+         */
+
+
+
+    </script>
+
+
+</body>
+</html>

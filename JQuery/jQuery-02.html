@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 应用</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .cls {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" value="修改颜色" id="btn">
+    <p class="cls">哈哈</p>
+    <p class="cls">呵呵</p>
+
+    <script>
+
+        $("#btn").click(function () {
+            $(".cls").css("backgroundColor", "yellow");
+        });
+
+    </script>
+
+
+</body>
+</html>

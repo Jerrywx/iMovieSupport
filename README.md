@@ -1,2 +1,2 @@
-#iMovieSupport
-##[JavaScript](./JavaScript/JavaScript.md)
+# iMovieSupport
+## [JavaScript](./JavaScript/JavaScript.md)
