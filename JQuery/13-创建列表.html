@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建列表</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 400px;
+            height: 600px;
+            border-width: 1px;
+            border-color: red;
+            border-style: solid;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input value="创建列表" id="btn" type="button">
+
+    <div class="size">
+    </div>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                var array = ["Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                    "Sorry,文件已被删除或取消分享(⊙o⊙)…",
+                            ];
+
+
+                var boxObj = $("div");
+
+                /// 添加 ul
+                var ulObj = $("<ul style='list-style-type: none; cursor: pointer'></ul>").appendTo(boxObj);
+
+                for (var i = 0; i< array.length; i++) {
+
+                    $("<li>"+ array[i] + "</li>").appendTo(ulObj)
+                        .mouseenter(function () {
+                            $(this).css("backgroundColor", "red");
+                        })
+                        .mouseleave(function () {
+                            $(this).css("backgroundColor", "");
+                        }).click(function () {
+                        $(this).css("fontSize", "33px").css("color", "pink");
+                    });
+                }
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的创建</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+
+            width: 200px;
+            height: 200px;
+            border-color: red;
+            border-style: solid;
+            border-width: 5px;
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" value="添加标签" id="btn">
+
+    <div class="size">
+
+
+
+    </div>
+
+
+    <script>
+
+        $(function () {
+
+            // 添加方式一：
+            // $("#btn").click(function () {
+            //     // alert("asd");
+            //     $("div").append($("<a href='http://www.baidu.com'>百度</a>"));
+            // });
+
+            // 添加方式二：
+            // $("#btn").click(function () {
+            //     $("<a href='http://www.baidu.com'>百度</a>").appendTo($("div"));
+            // });
+
+            /// 添加多个
+            $("#btn").click(function () {
+
+                for (var i=0; i<10; i++) {
+                    $("<a href='http://www.baidu.com'>百度</a><br>").appendTo($("div"));
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>

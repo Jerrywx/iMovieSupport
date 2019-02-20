@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表的高亮</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <lu>
+
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+        <li>你确定荧光色不好看？</li>
+
+    </lu>
+
+    <script>
+
+        $(function () {
+
+            $("li").mouseenter(function () {
+               $(this).css("backgroundColor", "red");
+            }).mouseleave(function () {
+               $(this).css("backgroundColor", "");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

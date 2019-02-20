@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素样式设置方式</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <input type="button" id="btn" value="设置元素样式">
+
+    <div>
+
+    </div>
+
+    <script>
+
+        $("#btn").click(function () {
+
+            // 第一种写法
+            // $("div").css("width", "300px");
+            // $("div").css("height", "200px");
+            // $("div").css("backgroundColor", "red");
+
+            // 第二种写法 链式编程
+            // $("div").css("width", "300px").css("height", "200px").css("backgroundColor", "red");
+
+            // 第三种写法: 键值对的写法
+            var json = {"height" : "200px",
+                        "width" : "300px",
+                        "backgroundColor" : "red",
+                        };
+            $("div").css(json);
+
+        });
+
+    </script>
+
+
+</body>
+</html>
