@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素创建的不同方式</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" value="添加按钮" id="btn">
+
+    <div class="size">
+        <p>第一个标签</p>
+
+    </div>
+
+    <script>
+
+        $("#btn").click(function () {
+
+            var box = $("div");
+
+            /// 添加按钮一
+            // $("<input type='button' value='哈哈'>").appendTo(box);
+
+            /// 添加按钮二
+            // box.html("<input type='button' value='哈哈'>");
+
+            /// 添加按钮二
+            // box.prepend($("<input type='button' value='哈哈'>"));
+            $("<input type='button' value='哈哈'>").prependTo(box);
+
+            // 添加到元素的后面
+            // box.after($("<input type='button' value='哈哈'>"));
+            // 添加到元素的前面
+            box.before($("<input type='button' value='哈哈'>"));
+        });
+
+    </script>
+
+
+</body>
+</html>
