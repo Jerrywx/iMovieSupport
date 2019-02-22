@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切换复选框选中</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <input type="button" value="选中/取消选中" id="btn">
+
+    <input type="checkbox" value="1" id="ck">玩游戏
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+                if ($("#ck").prop("checked")) {
+                    $("#ck").prop("checked", false);
+                } else {
+                    $("#ck").prop("checked", true);
+                }
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

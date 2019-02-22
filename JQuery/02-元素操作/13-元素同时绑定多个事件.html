@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素同时绑定多个事件</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style>
+
+        .size {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            border-color: red;
+            border-width: 2px;
+        }
+
+        p {
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" id="btn" value="按钮">
+
+    <div class="size">
+
+        <p>这是一个P标签</p>
+
+    </div>
+
+    <script>
+
+        $(function () {
+
+            /// 同时绑定多个事件
+            // $("#btn").click(function () {
+            //     console.log("事件一");
+            // }).click(function () {
+            //     console.log("事件二");
+            // }).click(function () {
+            //     console.log("事件三");
+            // })
+
+            ///
+            // $("#btn").bind("click", function () {
+            //     console.log("事件一");
+            // }).bind("click", function () {
+            //     console.log("事件二");
+            // }).bind("click", function () {
+            //     console.log("事件三");
+            // });
+
+            /// 代理 - 子元素 委托父元素绑定事件
+            $("#btn").click(function () {
+                console.log("sads");
+                $("div").delegate("p", "click", function () {
+                    alert("这是p");
+                });
+            });
+
+        })
+
+    </script>
+
+</body>
+</html>

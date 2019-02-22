@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为元素绑定事件</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <input type="button" value="测试按钮" id="btn">
+
+    <script>
+
+        $(function () {
+
+            /// 添加事件一:
+            // /// 鼠标进入
+            // $("#btn").mouseenter(function () {
+            //     $(this).css("backgroundColor", "red");
+            // });
+            // /// 鼠标移除事件
+            // $("#btn").mouseleave(function () {
+            //     $(this).css("backgroundColor", "green");
+            // });
+            // /// 点击按钮
+            // $("#btn").click(function () {
+            //     $(this).css("backgroundColor", "yellow");
+            // });
+
+
+            /// 添加事件二:
+            // $("#btn").mouseenter(function () {
+            //     $(this).css("backgroundColor", "red");
+            // }).mouseleave(function () {
+            //     $(this).css("backgroundColor", "green");
+            // }).click(function () {
+            //     $(this).css("backgroundColor", "yellow");
+            // });
+
+            /// 添加事件三:
+            // $("#btn").bind("click", function () {
+            //     $(this).css("backgroundColor", "yellow");
+            // });
+            // $("#btn").bind("mouseleave", function () {
+            //     $(this).css("backgroundColor", "green");
+            // });
+            // $("#btn").bind("mouseenter", function () {
+            //     $(this).css("backgroundColor", "red");
+            // });
+
+
+            /// 添加事件四:
+            // $("#btn").bind("click", function () {
+            //     $(this).css("backgroundColor", "yellow");
+            // }).bind("mouseleave", function () {
+            //     $(this).css("backgroundColor", "green");
+            // }).bind("mouseenter", function () {
+            //     $(this).css("backgroundColor", "red");
+            // });
+
+
+            /// 添加事件四:
+            $("#btn").bind({"click":function () {
+                $(this).css("backgroundColor", "yellow");
+                }, "mouseenter":function () {
+                $(this).css("backgroundColor", "red");
+                }, "mouseleave":function () {
+                $(this).css("backgroundColor", "green");
+            }});
+
+            // $("#btn").bind("click", function () {
+            //     $(this).css("backgroundColor", "yellow");
+            // }).bind("mouseleave", function () {
+            //     $(this).css("backgroundColor", "green");
+            // }).bind("mouseenter", function () {
+            //     $(this).css("backgroundColor", "red");
+            // });
+
+
+        });
+
+    </script>
+
+
+</body>
+</html>

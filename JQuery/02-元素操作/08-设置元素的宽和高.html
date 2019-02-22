@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置元素的宽和高</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 200px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" value="设置标签大小" id="btn">
+
+    <div class="size" id="dv"></div>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                /// 获取元素尺寸
+                // var w = $("#dv").css("width");
+                // var h = $("#dv").css("height");
+
+                // console.log(w);
+                // console.log(h);
+
+                /// 设置元素尺寸
+                // $("#dv").css("width", (parseInt(w) * 2) + "px");
+                // $("#dv").css("height", (parseInt(h) * 2) + "px");
+
+                var w = $("#dv").width();
+                var h = $("#dv").height();
+
+                $("#dv").width(w * 2);
+                $("#dv").height(h * 2);
+
+                console.log(w);
+                console.log(h);
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
