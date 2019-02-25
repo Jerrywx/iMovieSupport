@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb3c5a8e-8e52-4621-9a6a-5f1c39ec896b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JQuery/03-事件和链式编程/01-为元素绑定事件的不同方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JQuery/03-事件和链式编程/03-为元素解绑事件.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery/02-元素操作/05-权限选择.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery/02-元素操作/07-切换复选框选中.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,17 +93,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/01-为元素绑定事件的不同方式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="48" selection-start-line="48" selection-end-line="49" />
+            <state relative-caret-position="162">
+              <caret line="6" column="82" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html">
+        <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/03-为元素解绑事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="531">
+              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -166,6 +165,8 @@
         <option value="$PROJECT_DIR$/JQuery/02-元素操作/13-元素同时绑定多个事件.html" />
         <option value="$PROJECT_DIR$/JQuery/03-事件和链式编程/01-为元素绑定事件的不同方式.html" />
         <option value="$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html" />
+        <option value="$PROJECT_DIR$/JQuery/03-事件和链式编程/03-为元素解绑时间.html" />
+        <option value="$PROJECT_DIR$/JQuery/03-事件和链式编程/03-为元素解绑事件.html" />
       </list>
     </option>
   </component>
@@ -243,18 +244,19 @@
       <workItem from="1550742734084" duration="79000" />
       <workItem from="1550803994659" duration="218000" />
       <workItem from="1550804400337" duration="7103000" />
-      <workItem from="1550829597309" duration="1485000" />
+      <workItem from="1550829597309" duration="1576000" />
+      <workItem from="1551080210270" duration="1505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35604000" />
+    <option name="totallyTimeSpent" value="37200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="2005" height="1078" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1966378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1986755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -434,17 +436,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/01-为元素绑定事件的不同方式.html">
+    <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="48" selection-start-line="48" selection-end-line="49" />
+        <state relative-caret-position="243">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/02-动态添加行.html">
+    <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/01-为元素绑定事件的不同方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="162">
+          <caret line="6" column="82" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQuery/03-事件和链式编程/03-为元素解绑事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>

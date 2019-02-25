@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为元素解绑事件</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <input type="button" value="按钮" id="btn">
+
+    <input type="button" value="按钮解绑" id="btn2">
+
+    <div id="dv"></div>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+               alert("按钮点击事件");
+            });
+
+            /// 解绑按钮
+            $("#btn2").click(function () {
+
+                /// 解绑所有事件
+                // $("#btn").unbind();
+                /// 解绑点击事件
+                $("#btn").unbind("click");
+                /// 解绑指定多个事件
+                // $("#btn").unbind("click mouseenter mouseleave");
+
+            });
+
+
+            /// 移除代理事件
+            $("#btn").click(function () {
+
+                /// 解绑所有代理事件
+                $("#dv").undelegate();
+                /// 移除指定元素的事件
+                $("#dv").undelegate("p", "click", "mouseenter");
+
+            })
+
+            /// off 和 on
+
+
+        });
+
+    </script>
+
+
+</body>
+</html>
