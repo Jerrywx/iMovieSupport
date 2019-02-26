@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素移除的方法</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+    <input type="button" id="btn" value="删除元素">
+
+    <div id="box">
+
+        <p>哈哈</p>
+
+    </div>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                /// 清空
+                // $("#box").html("");
+                // $("#box").empty();
+
+                /// 删除自身
+                // $("#box").remove();
+
+                // $("#box").removeChild($("#box>p"));
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>

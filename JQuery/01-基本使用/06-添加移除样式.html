@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加移除样式</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .clas {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .clas2 {
+            width: 200px;
+            height: 300px;
+            border-bottom-color: yellow;
+            background-color: aqua;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <input type="button" value="设置按钮" id="btn">
+
+    <input type="button" value="删除样式" id="btn2">
+
+    <input type="button" value="是否应用的类" id="btn3">
+
+    <div class="clas"></div>
+
+    <script>
+
+        $(function () {
+
+            /// 添加类 样式
+            $("#btn").click(function () {
+                $("div").addClass("clas2");
+            });
+
+            /// 删除类样式
+            $("#btn2").click(function () {
+               $("div").removeClass("clas");
+            });
+
+            /// 判断是否应用的该类样式
+            $("#btn3").click(function () {
+                if ($("div").hasClass("clas")) {
+                    console.log("应用了!");
+                } else {
+                    console.log("没有应用!");
+                }
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画方法</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            /*display: inline-block;*/
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="size">
+
+    </div>
+
+
+    <script>
+
+        $(function () {
+
+            $("div").animate({"left" : "10px", "top" : "800px"}, 1000).
+            animate({"left" : "1800px", "top" : "800px"}, 1000).
+            animate({"left" : "1800px", "top" : "10px"}, 1000).
+            animate({"left" : "10px", "top" : "10px", "opacity":0.5}, 1000);
+
+        });
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的剪切与克隆</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-color: red;
+            border-width: 2px;
+        }
+
+        .box2 {
+            border-color: blue;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <input type="button" id="btn" value="按钮">
+
+    <div class="box1" id="box1">
+        <p>我是一个P标签</p>
+    </div>
+
+    <div class="box1 box2" id="box2">
+
+    </div>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+                /// 剪切标签
+                // $("#box1>p").appendTo($("#box2"));
+                // 克隆标签
+                $("#box1>p").clone().appendTo("#box2");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

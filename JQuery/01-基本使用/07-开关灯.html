@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开关灯</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 100%;
+            height: 100%;
+        }
+
+        .open {
+            background-color: white;
+        }
+
+        .close {
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <input type="button" value="开/关灯" id="btn">
+
+    <div>
+
+    </div>
+
+    <script>
+
+        /// 方法二:
+        // $(function () {
+        //     $("#btn").click(function () {
+        //         var body = $("body");
+        //         if (body.hasClass("open")) {
+        //             body.removeClass("open");
+        //             body.addClass("close");
+        //         } else {
+        //             body.removeClass("close");
+        //             body.addClass("open");
+        //         }
+        //     });
+        // });
+
+        /// 方法二:
+        // $(function () {
+        //     $("#btn").click(function () {
+        //         var body = $("body");
+        //         if (body.hasClass("close")) {
+        //             body.removeClass("close");
+        //         } else {
+        //             body.addClass("close");
+        //         }
+        //     });
+        // });
+
+        /// 方法三:
+        $(function () {
+            $("#btn").click(function () {
+                $("body").toggleClass("close");
+            });
+        });
+
+    </script>
+
+
+
+</body>
+</html>
