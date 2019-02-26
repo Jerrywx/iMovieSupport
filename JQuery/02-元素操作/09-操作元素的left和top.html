@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作元素的left和top</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        .size {
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            margin-top: 20px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <input type="button" value="修改位置" id="btn">
+
+    <div class="size" id="box">
+
+    </div>
+
+    <script>
+
+        /**
+         *
+         * 元素宽度高
+         * .width() 是元素的宽度
+         * .height() 是元素的高度
+         * 元素的宽高可用获取 也可以设置
+         *
+         * .offset() ---> 获取的是对象, 可以设置, 也可以获取
+         * .offset({"left":值, "top":值});  设置方式
+         *
+         *
+         */
+
+        $("#btn").click(function () {
+
+            var box = $("#box");
+
+            var lef = box.offset().left;
+            var t = box.offset().top;
+
+            console.log(lef);
+            console.log(t);
+
+            box.offset({"left":40, "top":40});
+
+            // box.left(lef * 2);
+            // box.top(t * 2);
+
+        });
+
+    </script>
+
+</body>
+</html>
